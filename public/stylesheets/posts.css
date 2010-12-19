@@ -1,4 +1,11 @@
-div .button  {
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.button  {
 	background-color: #F5F5F5;
 	border-bottom-left-radius: 5px 5px;
 	border-bottom-right-radius: 5px 5px;
@@ -17,6 +24,10 @@ div .button  {
 	width: auto;	
 }
 
+div .add_post_form {
+	padding: 0;
+}
+
 div .cancel_button {
 	float: right;
 }
@@ -24,15 +35,18 @@ div .cancel_button {
 div .title_input {
 	font-size: 24px;
 	width: 100%;
+	border: 1px solid #BBBBBB;
 }
 
 div .body_input {
 	width: 100%;
 	resize: none;
+	border: 1px solid #BBBBBB;
 }
 
 div .publish_date_input {
 	width: 100%;
+	border: 1px solid #BBBBBB;
 }
 
 div#add_post_form {
@@ -61,4 +75,49 @@ h2 .optional {
 	font: normal normal normal 11px/normal 'Lucida Grande', Verdana;
 	font-style: italic;
 	margin-left: 2px;
+}
+
+
+div#post {
+	clear: both;
+	width: 60em;
+}
+
+div#post_date {
+	border-top: 2px solid #CCCCCC;
+	float: left;
+	text-align: center;
+	width: 2.5em;
+	margin-right: 2em;
+}
+
+#month, #day {
+	font-size: 1.2em;
+	line-height: 1.25;
+	text-decoration: none;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	color: #C00906;
+}
+
+#month {
+	font-size: 1.5em;
+	line-height: 1.15385;
+}
+
+div#post_content {
+	float: left;
+	width: 40em;
+}
+
+div#post_content h1 {
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+div#post_content p {
+	display: block;
 }
