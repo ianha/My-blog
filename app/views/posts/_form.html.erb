@@ -1,0 +1,33 @@
+<% form_for @post do |p| %> 
+ <% if @post.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    <ul>
+    <% @post.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+<div id="add_post_form">
+	<h1>Add a Post</h1>
+	<h2>Title<span class="optional">(optional)</h2>
+	<div class="text_field_container">
+		<%= p.text_field :title, :class => "title_input" %>	
+	</div>
+	<h2>Post</h2>
+    <div class="field">
+       <%= p.text_area :body, :class => "body_input" %>
+    </div>
+	<h2>Publish date</h2>
+  	<div class="field">
+    	<%= p.text_field :publish_date, :class => "publish_date_input" %>
+    </div>
+	<div id="post_controls">
+		<button type="button" class="cancel_button button">Cancel</button>
+		<p><%= p.submit "Create", :class => "button" %></p>  
+	</div>
+</div>
+<% end %>
+ 

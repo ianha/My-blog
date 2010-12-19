@@ -1,0 +1,64 @@
+div .button  {
+	background-color: #F5F5F5;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border: 1px solid;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	border-color: #CCCCCC;
+	color: #565656;
+	cursor: pointer;
+	font: normal normal normal 15px/normal Helvetica, Arial, sans-serif;
+	height: 36px;
+	line-height: 36px;
+	margin: 0px;
+	overflow: visible;
+	padding: 0px 14px 0px 12px;
+	width: auto;	
+}
+
+div .cancel_button {
+	float: right;
+}
+
+div .title_input {
+	font-size: 24px;
+	width: 100%;
+}
+
+div .body_input {
+	width: 100%;
+	resize: none;
+}
+
+div .publish_date_input {
+	width: 100%;
+}
+
+div#add_post_form {
+	width: 600px;
+}
+
+h1 {
+	color: #2D4159;
+	font-family: Arial;
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 24px;
+	margin: 0px 0px 30px;
+	padding: 0px;
+}
+
+h2 {
+	color: #5B6772;
+	font-size: 16px;
+	margin: 30px 0px 5px;
+}
+
+h2 .optional {
+	color: #AAB5C1;
+	font: normal normal normal 11px/normal 'Lucida Grande', Verdana;
+	font-style: italic;
+	margin-left: 2px;
+}
