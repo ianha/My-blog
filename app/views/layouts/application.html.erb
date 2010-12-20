@@ -2,14 +2,37 @@
 <html>
 <head>
   <title>TabBlog</title>
-  <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
-  <%= stylesheet_link_tag("posts") %>
+  <%= stylesheet_link_tag("main") %>
 </head>
 <body>
+<div id="container">
+<header>
+	<h1><a href="/">Website of Ian Ha</a></h1>
+	<p>My thoughts mainly on software development, but also other stuff.</p>
+</header>
+<div id="main">
+	<div id="left_side_bar">
+		<div id="navlist">
+			<h4>&nbsp;</h4>
+			<ul>	
+				<li><a href="/">Blog</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="mailto:ian@ianha.com">Contact</a></li>
+			</ul>
+		</div>
+		<ul id="follow">
+			<li><%= image_tag("icon_type_twitter.png") %></li>
+		</ul>
+	</div>
+	<div id="content">
+		<%= yield %>
+	</div>
+</div>
+</div>
 
-<%= yield %>
+<footer>Footer goes here</footer>
 
 </body>
 </html>
