@@ -1,9 +1,13 @@
 TabBlog::Application.routes.draw do
-  get "home/index"
+
+  get "error/handle404"
 
   resources :posts
   
   root :to => "posts#index"
+  
+  # Direct all unmatch uris to custom handler
+  match "*path" => 'error#handle404' 
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -25,7 +25,7 @@
     	<%= p.text_field :publish_date, :class => "publish_date_input" %>
     </div>
 	<div id="post_controls">
-		<button type="button" class="cancel_button button">Cancel</button>
+		<%= link_to "Cancel", posts_path, :class => "cancel" %>
 		<p><%= p.submit "Create", :class => "button" %></p>  
 	</div>
 </div>
